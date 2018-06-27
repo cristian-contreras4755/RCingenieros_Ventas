@@ -1,0 +1,116 @@
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\RCingenierosApuControl.dll.config
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\RCingenierosApuControl.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\RCingenierosApuControl.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Antlr3.Runtime.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.ApplicationInsights.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Newtonsoft.Json.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Helpers.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Mvc.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Optimization.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Razor.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Deployment.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Razor.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\WebGrease.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Helpers.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Mvc.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Optimization.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Razor.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Deployment.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Razor.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Antlr3.Runtime.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Newtonsoft.Json.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.ApplicationInsights.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Helpers.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Mvc.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Optimization.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Razor.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.WebPages.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.SqlServer.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.SqlServer.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\NLog.config
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Common.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\NLog.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Services.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Common.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Services.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\NLog.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.csprojFakesResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Services.dll.config
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Entity.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Entity.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Entity.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\NLog.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\RCingenierosApuControl.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\RCingenierosApuControl.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\RCingenierosApuControl.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Antlr3.Runtime.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Common.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Entity.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.SqlServer.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Helper.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.AI.Agent.Intercept.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.ApplicationInsights.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.Web.Infrastructure.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Newtonsoft.Json.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\NLog.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Services.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Helpers.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Mvc.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Optimization.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Razor.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Deployment.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Razor.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\WebGrease.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Common.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Entity.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Entity.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Helper.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Services.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Services.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\EntityFramework.SqlServer.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\NLog.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Helpers.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Mvc.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Optimization.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.Razor.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Deployment.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\System.Web.WebPages.Razor.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Antlr3.Runtime.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Newtonsoft.Json.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\Microsoft.ApplicationInsights.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Helpers.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Mvc.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Optimization.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.Razor.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.WebPages.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.csprojFakesResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.csprojFakesResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\RCingenierosApuControl\obj\Debug\RCingenierosApuControl.pdb

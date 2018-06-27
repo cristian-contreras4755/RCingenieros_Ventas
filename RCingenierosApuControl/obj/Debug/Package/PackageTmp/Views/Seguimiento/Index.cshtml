@@ -1,0 +1,350 @@
+﻿
+@{
+    ViewBag.Title = "Seguimientos";
+}
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Mis seguimientos detallados </h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li>
+                    <a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <div class="row">
+
+     
+
+                    <div class="table-responsive">
+                        <table id="tblMovEmpleado" class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Fecha</th>
+                                    <th>nombre Mov.</th>
+                                    <th>Descripcion</th>
+                                    <th>Logros</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-cierreSeguimiento">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Cierre de seguimiento: </h4>
+                <span id="txtdetalleCierre"> </span>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                 
+                        <div class="form-group">
+                            <label>Logros:</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <input type="text"  id="txtIdDetalleMovimiento"hidden />
+
+                                <textarea rows="3" cols="10" type="text" id="txtLogros" class="form-control"></textarea>
+                            </div>
+                            <!-- /.input group -->
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+
+                    </div>
+                    <div class="col-lg-4">
+                        <button class="btn btn-success btn-lg" id="BtnGuardarCierreSeguimiento">Guardar</button>
+                    </div>
+                    <div class="col-lg-4">
+
+                    </div>
+           
+                </div>
+
+                <div class="row animate">
+                    <button class="btn btn-danger" id="BtnCancelar">Salir </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Content/vendors/Datatables/Js/jquery-1.12.4.js"></script>
+@*<script src="~/Content/vendors/jquery/dist2/jquery.min.js"></script>*@
+
+
+<link href="~/Content/vendors/Datatables/Css/select.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/vendors/Datatables/Css/dataTables.bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/vendors/Datatables/Css/buttons.dataTables.min.css" rel="stylesheet" />*@
+@section scripts{
+
+    <script src="~/Content/vendors/Datatables/Js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.select.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $("#btnBuscarCliente").click(function () {
+                tablaClientes.ajax.reload();
+                $("#modal-Cliente").modal('show');
+
+            });
+
+
+            $('#BtnSalirModalCliente').click(function () {
+
+                $("#modal-Cliente").modal('hide');
+
+            });
+
+
+            var tablaMovEmpleado = $("#tblMovEmpleado").DataTable({
+                "ajax": {
+                    "url": "/Seguimiento/ListarDetallesMovimientoPorEmpleado",
+                    "type": "GET",
+                    "datatype": "json",
+                    "data": function (d) {
+                        d.IdEmpleado = $("#txtCommonIdEmpleado").val()
+                    }
+                },
+                "columns": [
+
+                    { "data": "NombreComercial", "name": "NombreComercial" },
+                    {
+                        "data": "FechaMovimiento", "render": function (value) {
+                            if (value === null) return "";
+                            var pattern = /Date\(([^)]+)\)/;
+                            var results = pattern.exec(value);
+                            var dt = new Date(parseFloat(results[1]));
+                            return dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate();
+                        }
+                    },
+                    { "data": "NombreMovimiento", "name": "NombreMovimiento" },
+                    { "data": "Descripcion", "name": "Descripcion" },
+                    { "data": "Logros", "name": "Logros" },
+                    {
+                        "data": "Estado", "render": function (data) {
+                            if (data == 'S') {
+                                return "<span class='label label-success'>En Seguimiento</span>";
+                            } else {
+                                "<span class='label label-success'>Cerrado</span>";
+
+                            }
+                        }
+                    }
+                ],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+
+
+
+            $("#tblMovEmpleado tbody").on('dblclick', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    tablaMovEmpleado.$('tr.selected').removeClass('selected');
+                }
+                else {
+                    tablaMovEmpleado.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                    var dato = tablaMovEmpleado.row(this).data();
+                    $("#txtIdDetalleMovimiento").val('');
+                    $("#txtIdDetalleMovimiento").val(dato.IdDetalleMovimiento);
+                    $("#modal-cierreSeguimiento").modal('show');
+                    $("#txtdetalleCierre").text(dato.NombreComercial + ': ' + dato.NombreMovimiento);
+                    $("#txtLogros").val('');
+                }
+
+            });
+
+
+
+        });
+
+
+        $("#BtnGuardarCierreSeguimiento").click(function () {
+
+            if ($("#txtIdDetalleMovimiento").val() != null && $("#txtIdDetalleMovimiento").val() != null) {
+                alertify.error('Ingrese la descripcion del Logro');
+            } else {
+                var data = { IdDetalleMovimiento: $("#txtIdDetalleMovimiento").val(), Logros: $("#txtIdDetalleMovimiento").val() };
+                $.ajax({
+                    url: '/Seguimiento/CerrarSeguimientoPosterior/',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: data,
+                    success: function (data) {
+
+                        if (data == 'OK') {
+
+                            $("#txtLogros").val('');
+                            $("#txtIdDetalleMovimiento").val('');
+                            $("#modal-cierreSeguimiento").modal('hide');
+                            alertify.success('Seguiminto cerrado con Éxito !');
+                            $('#tblMovEmpleado').DataTable().ajax.reload();
+
+                        } else {
+                            alertify.error('No se pudo completar la acción! Intentelo nuevamete');
+                        }
+                    },
+                    error: function (err) {
+                        alertify.error('No se pudo completar la acción! Intentelo nuevamete');
+                    }
+                });
+
+            }
+        });
+
+
+
+
+        $("#BtnCancelar").click(function () {
+            $("#txtLogros").val('');
+            $("#modal-cierreSeguimiento").modal('hide');
+        });
+
+
+
+
+
+
+
+
+        //$('#txtFecha').datepicker({
+        //    pickTime: true,
+        //    autoclose: true,
+        //    format: 'yyyy/mm/dd',
+        //    language: 'es',
+        //    startDate: '-1d',
+        //    title: 'FECHA'
+        //});
+
+
+
+    </script>
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

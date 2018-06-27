@@ -1,0 +1,10 @@
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\bin\Debug\Common.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\bin\Debug\Common.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Common\obj\Debug\Common.pdb

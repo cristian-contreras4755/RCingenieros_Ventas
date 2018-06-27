@@ -1,0 +1,15 @@
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\bin\Debug\Entity.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\bin\Debug\Entity.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\bin\Debug\EntityFramework.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\bin\Debug\EntityFramework.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\bin\Debug\Entity.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Entity\obj\Debug\Entity.pdb

@@ -1,0 +1,5 @@
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\bin\Release\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\bin\Release\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Release\Helper.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Release\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Release\Helper.pdb

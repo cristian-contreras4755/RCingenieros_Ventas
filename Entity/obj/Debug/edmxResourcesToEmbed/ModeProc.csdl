@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBControlApuModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DBControlApuEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="SP_PuntoVenta_ListarNoRegistradosEnProvisionesMensuales" ReturnType="Collection(DBControlApuModel.SP_PuntoVenta_ListarNoRegistradosEnProvisionesMensuales_Result)">
+      <Parameter Name="MesProvicion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_PuntoVenta_ListarNoRegistradosEnProvisionesMensuales_Result">
+    <Property Type="Int32" Name="IdPuntoVenta" Nullable="false" />
+    <Property Type="String" Name="NombrePuntoVenta" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="RazonSocial" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="NombreGrupo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NroDocumento" Nullable="true" MaxLength="20" />
+  </ComplexType>
+</Schema>

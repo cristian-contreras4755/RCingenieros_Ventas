@@ -1,0 +1,759 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2> Registros Movimientos Diarios</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li>
+                    <a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label>Cliente</label>
+                        <div class="input-group">
+                            <input type="text" id="txtNombrecliente" class="form-control" disabled />
+                            <div class="input-group-addon btn-danger" id="btnBuscarCliente">
+                                <i class="fa fa-search"> Buscar.. </i>
+                            </div>
+                            <input type="text" id="txtIdCliente" class="form-control"  />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label>Fecha (*)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control" id="txtFecha" data-date-format="yyyy/mm/dd" required="" placeholder="yyyy/mm/dd">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="panel panel-danger">
+
+                    <div class="panel-body">
+
+                        <div class="row">
+
+
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label>Tipo movimiento:</label>
+                                        <div class="input-group">
+                                            <input type="text" id="txtTipoMovimiento" class="form-control" disabled />
+                                            <input type="text" id="txtIdTipoMovimiento" class="form-control" />
+                                            <div class="input-group-addon btn-danger" id="btnBuscarTipoMovimiento">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3">
+                                    <div class="form-group"  >
+                                        <label>Descripcion:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-pencil"></i>
+                                            </div>
+                                            <textarea rows="3" cols="10" type="text" id="txtDescripciontipoMov" class="form-control"></textarea>
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label>Logros:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-pencil"></i>
+                                            </div>
+                                            <textarea rows="3" cols="10" type="text" id="txtLogros" class="form-control"></textarea>
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <label>Estado:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon" >
+                                                <i class="fa fa-pencil"></i>
+                                            </div>
+                                            <select class="form-control" id="cbEstadoDMovimiento">
+                                                <option value="C">CIERRE</option>
+                                                <option value="S">SEGUIMIENTO</option>
+                                                @*<option value="CF">CIERRE FIN</option>*@
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-1">
+                                    <div class="form-group">
+                                        <label>Agregar</label>
+                                        <div class="input-group">
+                                            <input type="button" id="AgregarItem" value="+" class="btn btn-success" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <table class="table" id="TblDetalleMovimiento">
+
+                    <thead>
+                        <tr>   <td hidden >tipo Mov</td> <td>movimiento</td><td>Descripcion</td><td>Logros</td><td hidden  >Estado</td> <td>Opciones</td></tr>
+                    </thead>
+                    <tbody class="thead-inverse"></tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+
+            </div>
+
+            <div class="row center">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <button class="btn btn-success" id="btnRegistrarMovimientos"> REGISTRAR</button>
+                    <button class="btn btn-danger" id="btnCancelarRegistroMovimiento"> CANCELAR</button>
+     
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="modal-Cliente">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Mis Clientes</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+                        <div class="table-responsive">
+                            <table id="tblClientes" class="display" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th> NombreComercial</th>
+                                        <th>RazonSocial</th>
+                                        <th>Ruc</th>
+                                        <th> Direccion de la empresa</th>
+                                        <th>TipoCliente</th>
+                                        <th>Empleado</th>
+                                        <th>Fecha Sunat</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="row animate">
+
+                    <button class="btn btn-danger" id="BtnSalirModalCliente">Salir </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="modal-TipoMovimiento">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Tipo Movimiento</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="table-responsive table-bordered table-inverse">
+                        <table id="tblTipoMovimiento" class="display" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Nombre Movimiento</th>
+                                    <th>Decripcion Movimiento</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="row animate">
+
+                    <button class="btn btn-danger" id="BtnSalirModalTipoMovimiento">Salir </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="~/Content/vendors/Datatables/Js/jquery-1.12.4.js"></script>
+@*<script src="~/Content/vendors/jquery/dist2/jquery.min.js"></script>*@
+
+
+<link href="~/Content/vendors/Datatables/Css/select.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/vendors/Datatables/Css/dataTables.bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/vendors/Datatables/Css/buttons.dataTables.min.css" rel="stylesheet" />*@
+@section scripts{
+
+    <script src="~/Content/vendors/Datatables/Js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.select.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+       
+
+            //function ValidarDuplicidad(IdTipoMovimiento) {
+            //    $("#TblDetalleMovimiento tbody tr").each(function (index) {
+            //        var IdTipoMovimiento = $("#txtIdTipoMovimiento").val();
+            //        var ColumnaCero;
+            //        var retorno = true;
+
+            //        $(this).children("th").each(function (index2) {
+            //            switch (index2) {
+
+            //                case 0: ColumnaCero = $(this).text();
+            //                    if (ColumnaCero == IdTipoMovimiento) {
+            //                        alertify.success('ya hay columnas repetidas' + ColumnaCero);
+            //                        return false;
+            //                    }
+            //                    break;
+            //            }
+
+            //        });
+            //    });
+
+            //    return
+            //}
+
+
+
+
+            //validando duplicidad de  tipo de movimiento.
+
+
+        
+
+            function validadItem() {
+
+                var cont = 0;
+                    $("#TblDetalleMovimiento th").each(function () {
+                    var item = $(this).text();
+                    if (Validar(item) == true) {
+                        cont = cont + 1;
+                    } 
+                });
+                    return cont;
+                }
+
+
+
+            function Validar(valor) {
+                var IdTipoMovimiento= $("#txtIdTipoMovimiento").val();
+                if (valor == IdTipoMovimiento) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+
+
+
+
+            $("#AgregarItem").click(function () {
+
+                var IdTipoMovimiento = $("#txtIdTipoMovimiento").val();
+                var TipoMovimiento = $("#txtTipoMovimiento").val();
+                var Descripcion = $("#txtDescripciontipoMov").val();
+                var Logros = $("#txtLogros").val();
+                var Estado = $("#cbEstadoDMovimiento").val();
+
+
+                if (IdTipoMovimiento == '') {
+
+                    alertify.error('Por favor Registre el tipo  de movimiento que  realizó!');
+
+                } else if (TipoMovimiento == '') {
+                    alertify.error('Por favor Registre el tipo  de movimiento que  realizó!');
+
+                } else if (Descripcion == '') {
+
+                    alertify.error('Por favor Ingrese una descripcion del movimiento!');
+                }
+
+                else if (Logros == '') {
+
+                    alertify.error('Por favor Ingrese un logro del movimiento!');
+                }
+                else if (Estado == '') {
+                    alertify.error('Estado!');
+
+                } else if (validadItem() > 0) {
+
+                    alertify.error('por favor registre otro tipo de movimiento!');
+
+                }else {
+
+                    var fila = '<tr><th hidden >' + IdTipoMovimiento + '</th><th>' + TipoMovimiento + '</th><th>' + Descripcion + '</th><th>' + Logros + '</th> <th hidden>' + Estado + '</th><th><input type="button" value="X"  class="Borrar btn btn-danger"/></th> </tr>';
+                    $("#TblDetalleMovimiento tbody").append(fila);
+                    $("#txtDescripciontipoMov,#txtLogros").val('');
+                }
+
+            });
+
+            ///borrar items de lista
+            $(function () {
+                $(document).on('click', '.Borrar', function (event) {
+                    event.preventDefault();
+                    $(this).closest('tr').remove();
+                });
+            });
+
+
+
+            function LimpiarCajaDeTexto() {
+                $("#txtNombrecliente,#txtFecha,#txtTipoMovimiento,#txtDescripciontipoMov,#txtLogros").val('');
+                $("#TblDetalleMovimiento tbody tr").each(function(){
+                    $(this).remove();
+                });
+            }
+
+
+           
+            //methodos de registro detalle de movimientos  a un array y  luego  ingresarlas 
+
+            $("#btnRegistrarMovimientos").click(function () {
+
+                if ($('#txtIdCliente').val()== '') {
+
+                    alertify.error('Por favor Selecciona el Cliente!');
+
+
+                } else if ($('#txtFecha').val() == '') {
+
+                    alertify.error('Debes Seleccionar una fecha!');
+
+                } else if ($("#txtCommonIdEmpleado").val() == '') {
+
+                    alertify.error('No hay usuario  en session!');
+
+                }else  {
+
+
+                    var DetalleMovimiento = []
+                    $("#TblDetalleMovimiento").find("tbody tr").each(function (index, el) {
+                        DetalleMovimiento.push({
+                            IdTipoMovimiento: parseInt($(el).find("th").eq(0).text()),
+                            Descripcion: $(el).find("th").eq(2).text(),
+                            Logros: $(el).find("th").eq(3).text(),
+                            Estado: $(el).find("th").eq(4).text()
+                        });
+                    });
+
+                    //console.log(DetalleMovimiento);
+
+                    if (DetalleMovimiento.length >= 1) {
+
+                        var estado = 'A';
+                        var data = {
+                            Idcliente: $('#txtIdCliente').val(),
+                            IdEmpleado: $("#txtCommonIdEmpleado").val(),
+                            FechaMovimiento: $('#txtFecha').val(),
+                            Estado: estado,
+                            DetalleMovimiento: DetalleMovimiento
+                        }
+
+                        $.ajax({
+                            url: '/Movimientos/RegistrarMovimientos/',
+                            type: 'POST',
+                            dataType: 'json',
+                            data: JSON.stringify(data),
+                            contentType: "application/json",
+                            success: function (data) {
+                                if (data == "OK") {
+                                    alertify.success('Registro Exitoso!');
+                                    LimpiarCajaDeTexto();
+                                } else {
+                                    alertify.error('Error Al registrar Intente nuevamente!');
+                                }
+                            },
+                            error: function (err) {
+                                alertify.error('Error Al registrar Intente nuevamente!' + err);
+                            }
+                        });
+
+                    } else {
+
+                        alertify.error('Error, por lo menos debe registrar un tipo de movimiento!');
+                       
+                    }
+                }
+
+
+            });
+
+
+            $("#btnCancelarRegistroMovimiento").click(function () {
+                LimpiarCajaDeTexto();
+            });
+
+
+            //comportamiento  del  del modal cliente
+
+            $("#btnBuscarCliente").click(function () {
+                tablaClientes.ajax.reload();
+                $("#modal-Cliente").modal('show');
+
+            });
+
+
+            $('#BtnSalirModalCliente').click(function () {
+
+                $("#modal-Cliente").modal('hide');
+
+            });
+
+            $("#txtIdCliente").hide();
+            $("#txtIdTipoMovimiento").hide();
+       
+
+            var tablaClientes = $("#tblClientes").DataTable({
+                "ajax": {
+                    "url": "/movimientos/ListarClientesPorEmpleado",
+                    "type": "GET",
+                    "datatype": "json",
+                    "data": function (d) {
+                        d.IdEmpleado = $("#txtCommonIdEmpleado").val()
+                    }
+                },
+                "columns": [
+
+                    { "data": "NombreComercial", "name": "NombreComercial" },
+                    { "data": "RazonSocial", "name": "RazonSocial" },
+                    { "data": "Ruc", "name": "Ruc" },
+                    { "data": "Zona", "name": "Zona" },
+                    { "data": "NombreTipo", "name": "NombreTipo" },
+                    { "data": "NombreEmpleado", "name": "NombreEmpleado" },
+                    {"data": "FechaSunat", "render": function (value) {
+                            if (value === null) return "";
+                            var pattern = /Date\(([^)]+)\)/;
+                            var results = pattern.exec(value);
+                            var dt = new Date(parseFloat(results[1]));
+                            return dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate();
+                        }
+                    }
+                ],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+            $("#tblClientes tbody").on('dblclick', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    tablaClientes.$('tr.selected').removeClass('selected');
+                }
+                else {
+                    tablaClientes.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+
+                    var dato = tablaClientes.row(this).data();
+
+                    $("#txtIdCliente").val(dato.Idcliente);
+                    $("#txtNombrecliente").val(dato.NombreComercial);
+                    $("#modal-Cliente").modal('hide');
+                    tablaClientes.ajax.reload();
+                }
+
+            });
+
+
+
+            //comportamiento  de la del  modal  movimientos 
+
+
+            $("#btnBuscarTipoMovimiento").click(function () {
+                $("#modal-TipoMovimiento").modal('show');
+            });
+
+
+            $('#BtnSalirModalTipoMovimiento').click(function () {
+                $("#modal-TipoMovimiento").modal('hide');
+                //TablaTMovimiento.ajax.reload();
+            });
+
+
+
+            var TablaTMovimiento = $("#tblTipoMovimiento").DataTable({
+                "ajax": {
+                    "url": "/Movimientos/ListarTipoMovimientoTotal",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "NombreMovimiento", "name": "NombreMovimiento" },
+                    { "data": "DescripcionMovimiento", "name": "DescripcionMovimiento" },
+                    { "data": "Estado", "name": "Estado" }],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+
+
+            $("#tblTipoMovimiento tbody").on('dblclick', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    TablaTMovimiento.$('tr.selected').removeClass('selected');
+                }
+                else {
+                    TablaTMovimiento.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                    var dato = TablaTMovimiento.row(this).data();
+                    $("#txtIdTipoMovimiento").val(dato.IdTipoMovimiento);
+                    $("#txtTipoMovimiento").val(dato.NombreMovimiento);
+                    $("#modal-TipoMovimiento").modal('hide');
+                }
+
+            });
+
+
+        });
+
+
+        //comportamiento  del libreri  fechas
+
+        $('#txtFecha').datepicker({
+            pickTime: true,
+            autoclose: true,
+            format: 'yyyy/mm/dd',
+            language: 'es',
+            //startDate: '-1d',
+            title: 'FECHA'
+        });
+
+
+
+    </script>
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

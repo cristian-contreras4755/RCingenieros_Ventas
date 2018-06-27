@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBControlApuModelStoreContainer" CdmEntityContainer="DBControlApuEntities">
+    <FunctionImportMapping FunctionImportName="SP_PuntoVenta_ListarNoRegistradosEnProvisionesMensuales" FunctionName="DBControlApuModel.Store.SP_PuntoVenta_ListarNoRegistradosEnProvisionesMensuales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBControlApuModel.SP_PuntoVenta_ListarNoRegistradosEnProvisionesMensuales_Result">
+          <ScalarProperty Name="IdPuntoVenta" ColumnName="IdPuntoVenta" />
+          <ScalarProperty Name="NombrePuntoVenta" ColumnName="NombrePuntoVenta" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="NombreGrupo" ColumnName="NombreGrupo" />
+          <ScalarProperty Name="NroDocumento" ColumnName="NroDocumento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

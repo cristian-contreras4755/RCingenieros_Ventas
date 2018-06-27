@@ -1,0 +1,289 @@
+﻿
+@{
+    ViewBag.Title = "ReporteClientes";
+}
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2> Reporte Clientes En Seguimiento</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li>
+                    <a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <div class="row">
+                <div class="col-lg-2">
+
+                    <div class="form-group">
+                        <label>Estado Cliente(*)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <select class="form-control" id="cbEstadoDMovimiento">
+                                <option value="C">CIERRE</option>
+                                <option value="S">SEGUIMIENTO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label>Fecha Inicio (*)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control" id="txtFechaInicial" data-date-format="yyyy/mm/dd" required="" placeholder="yyyy/mm/dd">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label>Fecha Final (*)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control" id="txtFechaFinal" data-date-format="yyyy/mm/dd" required="" placeholder="yyyy/mm/dd">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <button class="btn btn-success" id="btnListarConsulta"> Listar Consulta</button>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="table-responsive-sm">
+                    <table id="tblDetalleEmpleadoCliente" class="table table-hover">
+                        <thead>
+                            <tr>
+
+                                <th>Cliente</th>
+                                <th>movimiento</th>
+                                <th>Empleado</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+
+          
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="modal-CierreSeguimiento">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Mis Clientes</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table id="tblDetalleSeguimiento" class="display" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Empleado</th>
+                                        <th>Movimiento</th>
+                                        <th>Descripcion</th>
+                                        <th>Logros</th>
+                                        <th>Fecha</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="row animate">
+
+                    <button class="btn btn-danger" id="BtnSalirModal">Salir </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Content/vendors/Datatables/Js/jquery-1.12.4.js"></script>
+@*<script src="~/Content/vendors/jquery/dist2/jquery.min.js"></script>*@
+
+
+<link href="~/Content/vendors/Datatables/Css/select.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/vendors/Datatables/Css/dataTables.bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/vendors/Datatables/Css/buttons.dataTables.min.css" rel="stylesheet" />*@
+@section scripts{
+
+    <script src="~/Content/vendors/Datatables/Js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.select.min.js"></script>
+
+    <script type="text/javascript">
+
+
+
+
+        $(document).ready(function () {
+            $("#btnListarConsulta").click(function () {
+
+
+                if ($("#tblDetalleEmpleadoCliente tbody tr").length > 0) {
+                    $('#tblDetalleEmpleadoCliente').DataTable().ajax.reload();
+                } else {
+
+                   if ($("#txtFechaInicial").val() == '') {
+
+                       alertify.error('Seleccione Fecha Inicial!');
+                   } else if ($("#txtFechaFinal").val() == '') {
+
+                       alertify.error('Seleccione Fecha Final');
+                   } else if ($("#cbEstadoDMovimiento").val() == '') {
+
+                       alertify.error('Seleccione Estado!');
+                   } else {
+
+
+                       var tablaReporte = $("#tblDetalleEmpleadoCliente").DataTable({
+                           "ajax": {
+                               "url": "/Reporte/ListarCantidaMovimientosClientesEmpleado",
+                               "type": "GET",
+                               "datatype": "json",
+                               "data": function (d) {
+                                   d.FechaInicio = $("#txtFechaInicial").val(),
+                                       d.FechaFinal = $("#txtFechaFinal").val(),
+                                       d.Estado = $("#cbEstadoDMovimiento").val()
+                               }
+                           },
+                           "columns": [
+
+                               { "data": "NombreComercial", "name": "NombreComercial" },
+                               { "data": "NombreMovimiento", "name": "NombreMovimiento" },
+                               { "data": "Empleado", "name": "Empleado" },
+                               { "data": "Estado",
+                                   "render": function (data) {
+                                       if (data == "S") {
+                                        
+                                           return "<span class='label label-success'>Pendiente</span>";
+                                       } else {
+                                           return "<span class='label label-danger'>Cerrada </span>";
+                                       }
+                                   }
+                               }
+                           ],
+                           "responsive": true,
+                           "language": {
+                               "decimal": "",
+                               "emptyTable": "No se encotraron datos..",
+                               "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                               "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                               "infoFiltered": "(filtrando _MAX_ total Filas)",
+                               "infoPostFix": "",
+                               "thousands": ",",
+                               "lengthMenu": "mostrado _MENU_ cantidad",
+                               "loadingRecords": "Cargando..",
+                               "processing": "Procesando...",
+                               "search": "Buscar:",
+                               "zeroRecords": "No hay  datos..",
+                               "paginate": {
+                                   "first": "Primero",
+                                   "last": "Pasado",
+                                   "next": "Siguiente",
+                                   "previous": "Anterior"
+                               },
+                               "aria": {
+                                   "sortAscending": ": activate to sort column ascending",
+                                   "sortDescending": ": activate to sort column descending"
+                               }
+                           }
+                       });
+                   }
+
+
+                }
+            });
+
+
+
+
+            //$("#tblReporte tbody").on('dblclick', 'tr', function () {
+            //    if ($(this).hasClass('selected')) {
+            //        $(this).removeClass('selected');
+            //        tablaReporte.$('tr.selected').removeClass('selected');
+            //    }
+            //    else {
+            //        tablaReporte.$('tr.selected').removeClass('selected');
+            //        $(this).addClass('selected');
+
+            //        var dato = tablaReporte.row(this).data();
+
+            //        $("#txtIdCliente").val(dato.Idcliente);
+            //        $("#txtNombrecliente").val(dato.RazonSocial);
+            //        $("#modal-Cliente").modal('hide');
+            //    }
+
+            //});
+
+
+        });
+
+        $('#txtFechaInicial').datepicker({
+            pickTime: true,
+            autoclose: true,
+            format: 'yyyy/mm/dd',
+            language: 'es',
+            title: 'FECHA'
+        });
+
+        $('#txtFechaFinal').datepicker({
+            pickTime: true,
+            autoclose: true,
+            format: 'yyyy/mm/dd',
+            language: 'es',
+            //startDate: '+1d',
+            title: 'FECHA'
+        });
+
+    </script>
+
+
+}

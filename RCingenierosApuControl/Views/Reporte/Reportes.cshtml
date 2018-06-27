@@ -1,0 +1,256 @@
+﻿
+@{
+    ViewBag.Title = "Reportes";
+}
+<h2>Reportes</h2>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2> Reporte Cantidad de seguimientos o eventos cerrados</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li>
+                    <a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <div class="row">
+                <div class="col-lg-3">
+
+                    <div class="form-group">
+                        <label>Estado Cliente(*)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <select class="form-control" id="cbEstadoDMovimiento">
+                                <option value="C">CIERRE</option>
+                                <option value="S">SEGUIMIENTO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label>Fecha Inicio (*)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control" id="txtFechaInicial" data-date-format="yyyy/mm/dd" required="" placeholder="yyyy/mm/dd">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label>Fecha Final (*)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control" id="txtFechaFinal" data-date-format="yyyy/mm/dd" required="" placeholder="yyyy/mm/dd">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <button class="btn btn-success" id="btnListarConsulta"> Listar Consulta</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="table-responsive-sm">
+                    <table id="tblDetalleSeguimiento" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Empleado</th>
+                                <th>Cantidad Seguimiento</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="table-responsive-sm">
+                    <table id="tblDetalleCantidadTipoMov" class="table table-hover">
+                        <thead>
+                            <tr>
+
+                                <th>movimiento</th>
+                                <th>Empleado</th>
+                                <th>tareas</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="~/Content/vendors/Datatables/Js/jquery-1.12.4.js"></script>
+@*<script src="~/Content/vendors/jquery/dist2/jquery.min.js"></script>*@
+
+
+<link href="~/Content/vendors/Datatables/Css/select.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/vendors/Datatables/Css/dataTables.bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/vendors/Datatables/Css/buttons.dataTables.min.css" rel="stylesheet" />*@
+@section scripts{
+
+    <script src="~/Content/vendors/Datatables/Js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.select.min.js"></script>
+
+    <script type="text/javascript">
+
+
+
+
+        $(document).ready(function () {
+            $("#btnListarConsulta").click(function () {
+
+
+                if ($("#tblDetalleSeguimiento tbody tr").length > 0) {
+                   $('#tblDetalleSeguimiento').DataTable().ajax.reload();
+                } else {
+
+                   if ($("#txtFechaInicial").val() == '') {
+
+                       alertify.error('Seleccione Fecha Inicial!');
+                   } else if ($("#txtFechaFinal").val() == '') {
+
+                       alertify.error('Seleccione Fecha Final');
+                   } else if ($("#cbEstadoDMovimiento").val() == '') {
+
+                       alertify.error('Seleccione Estado!');
+                   } else {
+
+
+                       var tablaReporte = $("#tblDetalleSeguimiento").DataTable({
+                           "ajax": {
+                               "url": "/Reporte/ListarDetallesMovimientoPorEmpleado",
+                               "type": "GET",
+                               "datatype": "json",
+                               "data": function (d) {
+                                   d.FechaInicio = $("#txtFechaInicial").val(),
+                                       d.FechaFinal = $("#txtFechaFinal").val(),
+                                       d.Estado = $("#cbEstadoDMovimiento").val()
+                               }
+                           },
+                           "columns": [
+
+                               { "data": "Empleado", "name": "Empleado" },
+                               { "data": "CantidadSeguimiento", "name": "CantidadSeguimiento" }
+                           ],
+                           "responsive": true,
+                           "language": {
+                               "decimal": "",
+                               "emptyTable": "No se encotraron datos..",
+                               "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                               "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                               "infoFiltered": "(filtrando _MAX_ total Filas)",
+                               "infoPostFix": "",
+                               "thousands": ",",
+                               "lengthMenu": "mostrado _MENU_ cantidad",
+                               "loadingRecords": "Cargando..",
+                               "processing": "Procesando...",
+                               "search": "Buscar:",
+                               "zeroRecords": "No hay  datos..",
+                               "paginate": {
+                                   "first": "Primero",
+                                   "last": "Pasado",
+                                   "next": "Siguiente",
+                                   "previous": "Anterior"
+                               },
+                               "aria": {
+                                   "sortAscending": ": activate to sort column ascending",
+                                   "sortDescending": ": activate to sort column descending"
+                               }
+                           }
+                       });
+
+
+
+
+
+                   }
+
+
+                }
+            });
+
+
+
+
+            //$("#tblReporte tbody").on('dblclick', 'tr', function () {
+            //    if ($(this).hasClass('selected')) {
+            //        $(this).removeClass('selected');
+            //        tablaReporte.$('tr.selected').removeClass('selected');
+            //    }
+            //    else {
+            //        tablaReporte.$('tr.selected').removeClass('selected');
+            //        $(this).addClass('selected');
+
+            //        var dato = tablaReporte.row(this).data();
+
+            //        $("#txtIdCliente").val(dato.Idcliente);
+            //        $("#txtNombrecliente").val(dato.RazonSocial);
+            //        $("#modal-Cliente").modal('hide');
+            //    }
+
+            //});
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+        $('#txtFechaInicial').datepicker({
+            pickTime: true,
+            autoclose: true,
+            format: 'yyyy/mm/dd',
+            language: 'es',
+            title: 'FECHA'
+        });
+
+        $('#txtFechaFinal').datepicker({
+            pickTime: true,
+            autoclose: true,
+            format: 'yyyy/mm/dd',
+            language: 'es',
+            //startDate: '+1d',
+            title: 'FECHA'
+        });
+
+    </script>
+
+
+}

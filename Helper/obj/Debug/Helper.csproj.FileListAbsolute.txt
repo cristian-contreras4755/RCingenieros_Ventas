@@ -1,0 +1,30 @@
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\bin\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\bin\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\bin\Debug\Helper.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\bin\Debug\Helper.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Helper\obj\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Helper\bin\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Helper\bin\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Helper\obj\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Helper\obj\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\bin\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\bin\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\bin\Debug\Helper.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\bin\Debug\Helper.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Helper\obj\Debug\Helper.pdb

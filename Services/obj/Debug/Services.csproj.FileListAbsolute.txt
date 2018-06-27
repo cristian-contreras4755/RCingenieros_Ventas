@@ -1,0 +1,81 @@
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Services.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Services.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Services.dll.config
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Common.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Common.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Entity.dll
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Entity.pdb
+C:\Users\developer\Desktop\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Entity.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Services.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Services.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Services.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Common.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Entity.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Helper.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Common.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Entity.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Entity.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\Helper.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  02 CONTROL  PRECIOS APU-FACT\RCINGENIEROS- PROYECTO  FACT_ELECTRONICA\RCingenierosApuControl\Services\obj\Debug\Services.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\Services.dll.config
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\Services.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\Services.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\EntityFramework.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\Modelo.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\Modelo.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\EntityFramework.xml
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\obj\Debug\Services.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosApuControl\Services\obj\Debug\Services.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Services.dll.config
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Services.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Services.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Helper.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Modelo.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Helper.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Modelo.pdb
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.xml
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.dll
+C:\Users\developer\Desktop\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Services.dll.config
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Services.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Services.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Helper.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Modelo.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Helper.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\Modelo.pdb
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.dll
+D:\PROYECTOS RC INGENIEROS -2018\PROYECTO  CONTROL DE VENTAS\RCingenierosVentasControl\Services\obj\Debug\Services.pdb

@@ -1,0 +1,1284 @@
+﻿
+@{
+    ViewBag.Title = "Registros";
+}
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2> Registro Clientes</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li>
+                    <a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+
+            <div class="panel-heading">
+
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Grupo(*)</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" id="txtNombreGrupo">
+                                <div class="input-group-addon btn-success" id="btnBuscarGrupo">
+                                    <i class="fa fa-search "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control hidden" id="txtIdGrupo">
+
+                    </div>
+
+
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Empleado(*)</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" id="txtNombreEmpleado">
+                                <div class="input-group-addon btn-success" id="btnBuscarEmpleado">
+                                    <i class="fa fa-search "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control hidden" id="txtIdEmpleado">
+                    </div>
+
+
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Tipo Negocio</label>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" id="txtTipoCliente">
+                                <div class="input-group-addon btn-success" id="btnBuscarTipoCliente">
+                                    <i class="fa fa-search "></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <input type="text" class="form-control hidden" id="txtIdTipoCliente">
+                    </div>
+
+
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label>Fecha Sunat (*)</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control input-sm" id="txtFechaSunat" data-date-format="yyyy/mm/dd" required="" placeholder="yyyy/mm/dd">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <input type="text" class="form-control hidden" id="txtIdCliente">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="">Nombre Comercial</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control input-sm" id="txtNombreComercial" name="txtNombreComercial" data-validate-length-range="5,20">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-4">
+
+                        <div class="form-group">
+                            <label>Razon social</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control input-sm" id="txtRazonSocial" />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <div class="col-lg-4">
+                            <label for="txtnombreGrupo">RUC</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="number" class="form-control input-sm" id="txtRuc" name="txtRuc" data-validate-length-range="5,20">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="form-group ">
+                            <label>Departamento</label>
+                            <div class="input-group input-sm">
+                                <select class="form-control" id="cbDepartamento">
+                                    <option value="AMAZONAS">Amazonas</option>
+                                    <option value="ANCASH">Ancash</option>
+                                    <option value="APURIMAC">Apurimac</option>
+                                    <option value="AREQUIPA">Arequipa</option>
+                                    <option value="AYACUCHO">Ayacucho</option>
+                                    <option value="CAJAMARCA">Cajamarca</option>
+                                    <option value="CALLAO">Callao</option>
+                                    <option value="CUSCO">Cusco</option>
+                                    <option value="HUANCAVELICA">Huancavelica</option>
+                                    <option value="HUANUCO">Huanuco</option>
+                                    <option value="ICA">Ica</option>
+                                    <option value="JUNIN">Junin</option>
+                                    <option value="LA LIBERTAD">La Libertad</option>
+                                    <option value="LAMBAYEQUE">Lambayeque</option>
+                                    <option value="LIMA">Lima</option>
+                                    <option value="LORETO">Loreto</option>
+                                    <option value="MADRE DE DIOS">Madre De Dios</option>
+                                    <option value="MOQUEGUA">Moquegua</option>
+                                    <option value="PASCO">Pasco</option>
+                                    <option value="PIURA">Piura</option>
+                                    <option value="PUNO">Puno</option>
+                                    <option value="SAN MARTIN">San Martin</option>
+                                    <option value="TACNA">Tacna</option>
+                                    <option value="TUMBES">Tumbes</option>
+                                    <option value="UCAYALI">Ucayali</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+
+                        <label>Provincia</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" id="txtProvincia" />
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="col-lg-3">
+                        <label>Distrito</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" id="txtDistrito" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3">
+
+
+                        <label>Direccion</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" id="txtDireccion" />
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <form method="post" action="" autocomplete="off">
+                    <div class="form-group">
+
+
+
+                        <div class="row">
+
+                            <div class="col-lg-4">
+                                <div class="w3-card-4">
+                                    <img src="~/Content/production/images/Cliente.png" class="img-circle" alt="Norway">
+                                    <div class="w3-container w3-center">
+                                        <p> Datos del contacto:  </p>
+
+                                        <label>Nombre Contacto/ Cargo</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control input-sm" id="txtNombreContacto1" />
+                                        </div>
+
+
+                                        <label>Nro Telf</label>
+                                        <div class="input-group">
+
+                                            <input type="tel" class="form-control input-sm" id="txtNroContacto1" />
+                                        </div>
+
+
+
+                                        <label>Email</label>
+                                        <div class="input-group">
+
+                                            <input type="email"  class="form-control input-sm" id="txtEmailContacto1" />
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-4">
+                                <div class="w3-card-4">
+                                    <img src="~/Content/production/images/Cliente.png" class="img-circle" alt="Norway">
+                                    <div class="w3-container w3-center">
+                                        <p>Datos del contacto:</p>
+
+
+                                        <div class="form-group">
+                                            <label>Nombre Contacto/ Cargo</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control input-sm" id="txtNombreContacto2" />
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-group">
+                                            <label>Nro Telf</label>
+                                            <div class="input-group">
+
+                                                <input type="tel" class="form-control input-sm" id="txtNroContacto2" />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <div class="input-group">
+                                                <input type="email" class="form-control input-sm" id="txtEmailContacto2" />
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-lg-4">
+                                <div class="w3-card-4">
+                                    <img src="~/Content/production/images/Cliente.png" class="img-circle image-responsive" alt="Norway">
+                                    <div class="w3-container w3-center">
+                                        <p>Datos del contacto:</p>
+
+
+                                        <div class="form-group">
+                                            <label>Nombre Contacto/ Cargo</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control input-sm" id="txtNombreContacto3" />
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-group">
+                                            <label>Nro Telf</label>
+                                            <div class="input-group">
+
+                                                <input type="tel" class="form-control input-sm" id="txtNroContacto3" />
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <div class="input-group">
+                                                <input type="email" class="form-control input-sm" id="txtEmailContacto3" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <div>
+                                <button type="button" class="btn btn-success" id="BtnRegistrarCliente"><i class="glyphicon glyphicon-floppy-saved"></i> Registrar</button>
+                                <button type="button" class="btn btn-warning" id="BtnEditarCliente"><i class="glyphicon glyphicon-edit"></i> Editar</button>
+                                <button type="button" id="btnCancelarRegistro" data-dismiss="modal" class="btn btn-danger"><i class="glyphicon glyphicon-triangle-left"> </i> Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="table-responsive">
+                <table id="tblClientes" class="display" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>NombreComercial</th>
+                            <th>RazonSocial</th>
+                            <th>NombreGrupo</th>
+                            <th>Ruc</th>
+                            <th> Direccion de la empresa</th>
+                            <th>TipoCliente</th>
+                            <th>NombreEmpleado</th>
+                            <th>FechaSunat</th>
+                            <th>opciones</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="modal-Empleado">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Empleados</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table id="tblEmpleado" class="display" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th> Area</th>
+                                        <th>Cargo</th>
+                                        <th>Ruc</th>
+                                        <th> Documento</th>
+                                        <th>EmailCorporativo</th>
+                                        <th>EmailPersonal</th>
+                                        <th>NroTelfPersonal</th>
+                                        <th>NroTelfCorporativo</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row animate">
+
+                    <button class="btn btn-danger" id="BtnSalirModalEmpleado">Salir </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="modal-TipoNegocio">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Tipo Cliente</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="table-responsive table-bordered table-inverse">
+                        <table id="tblTipoCliente" class="display" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th> Codigo</th>
+                                    <th>Tipo Cliente </th>
+                                    <th>Descripcion</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="row animate">
+
+                    <button class="btn btn-danger" id="BtnSalirModalTipoCliente">Salir </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modal-grupo">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Grupo Economico</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class="table-responsive table-bordered table-inverse">
+
+                        <table id="tblGrupo" class="table table-striped table-bordered table-responsive" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>NombreGrupo</th>
+                                    <th>TipoDocumento</th>
+                                    <th> NroDocumento</th>
+                                    <th> NroDocumento</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="row animate">
+
+                    <button class="btn btn-danger" id="BtnSalirModalGrupo">Salir </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="~/Content/vendors/Datatables/Js/jquery-1.12.4.js"></script>
+@*<script src="~/Content/vendors/jquery/dist2/jquery.min.js"></script>*@
+
+
+<link href="~/Content/vendors/Datatables/Css/select.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/vendors/Datatables/Css/dataTables.bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/vendors/Datatables/Css/buttons.dataTables.min.css" rel="stylesheet" />*@
+@section scripts{
+
+    <script src="~/Content/vendors/Datatables/Js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.select.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#BtnEditarCliente").hide();
+
+            var tablaClientes = $("#tblClientes").DataTable({
+                "ajax": {
+                    "url": "/Cliente/ListarClientes",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+
+                    { "data": "NombreComercial", "name": "NombreComercial" },
+                    { "data": "RazonSocial", "name": "RazonSocial" },
+                    { "data": "NombreGrupo", "name": "NombreGrupo" },
+                    { "data": "Ruc", "name": "Ruc" },
+                    { "data": "Zona", "name": "Zona" },
+                    { "data": "NombreTipo", "name": "NombreTipo" },
+                    { "data": "NombreEmpleado", "name": "NombreEmpleado" },
+                    {
+                        "data": "FechaSunat", "render": function (value) {
+                            if (value === null) return "";
+                            var pattern = /Date\(([^)]+)\)/;
+                            var results = pattern.exec(value);
+                            var dt = new Date(parseFloat(results[1]));
+                            return dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate();
+                        }
+                    },
+                    {
+                        "data": "Idcliente",
+                        "render": function (data) {
+                            return "<button class='btn btn-success btn-sm'style='margin-left:5px' onclick='BuscarClientePorId(" + data + ")' ><i class='glyphicon glyphicon-pencil'></i> </button><button class='btn btn-danger btn-sm' style='margin-left:5px' OnClick='EliminaCliente(" + data + ");'><i class='glyphicon glyphicon-trash' ></i></button>";
+                        },
+                        "orderable": false,
+                        "width": "150px"
+                    }
+                ],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+
+
+
+            //inicio  eventos tabla empleado
+
+            var TablaEmpleado = $("#tblEmpleado").DataTable({
+                "ajax": {
+                    "url": "/Cliente/ListarEmpleadosActivos",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "IdEmpleado", "name": "IdEmpleado" },
+                    { "data": "Nombre", "name": "Nombre" },
+                    { "data": "NombreArea", "name": "NombreArea" },
+                    { "data": "NombreCargo", "name": "NombreCargo" },
+                    { "data": "Documento", "name": "Documento" },
+                    { "data": "EmailCorporativo", "name": "EmailCorporativo" },
+                    { "data": "EmailPersonal", "name": "EmailPersonal" },
+                    { "data": "NroTelfPersonal", "name": "NroTelfPersonal" },
+                    { "data": "NroTelfCorporativo", "name": "NroTelfCorporativo" },
+                    { "data": "Estado", "name": "Estado" }],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+
+
+
+
+            $("#btnBuscarEmpleado").click(function () {
+                $("#modal-Empleado").modal('show');
+
+                TablaEmpleado.ajax.reload();
+            });
+
+
+
+
+            $('#BtnSalirModalEmpleado').click(function () {
+
+                $("#modal-Empleado").modal('hide');
+
+            });
+
+            $("#tblEmpleado tbody").on('dblclick', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    TablaEmpleado.$('tr.selected').removeClass('selected');
+                }
+                else {
+                    TablaEmpleado.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                    var dato = TablaEmpleado.row(this).data();
+                    $("#txtIdEmpleado").val(dato.IdEmpleado);
+                    $("#txtNombreEmpleado").val(dato.Nombre);
+                    $("#modal-Empleado").modal('hide');
+                }
+            });
+
+
+
+
+            //fin  eventos tabla empleado
+
+
+
+
+
+              //inicio de  eventos tabla tipoCliente
+            var TablaTipoCliente = $("#tblTipoCliente").DataTable({
+                "ajax": {
+                    "url": "/Cliente/ListarTipoClienteTotal",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "IdTipoCliente", "name": "IdTipoCliente" },
+                    { "data": "NombreTipo", "name": "NombreTipo" },
+                    { "data": "Descripcion", "name": "Descripcion" },
+                    { "data": "Estado", "name": "Estado" }],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+
+            $("#btnBuscarTipoCliente").click(function () {
+                $("#modal-TipoNegocio").modal('show');
+                TablaTipoCliente.ajax.reload();
+            });
+
+            $('#BtnSalirModalTipoCliente').click(function () {
+
+                $("#modal-TipoNegocio").modal('hide');
+            });
+
+            $("#tblTipoCliente tbody").on('dblclick', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    TablaTipoCliente.$('tr.selected').removeClass('selected');
+                }
+                else {
+                    TablaTipoCliente.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+
+                    var dato = TablaTipoCliente.row(this).data();
+
+                    $("#txtTipoCliente").val(dato.NombreTipo + dato.IdTipoCliente);
+                    $("#txtIdTipoCliente").val(dato.IdTipoCliente);
+
+
+                    $("#modal-TipoNegocio").modal('hide');
+                    TablaTipoCliente.ajax.reload();
+
+                }
+
+            });
+
+
+
+            //fin de  eventos tabla tipoCliente
+
+
+
+            //inicio de  la tabla grupo
+
+            var tablaGrupo = $("#tblGrupo").DataTable({
+                "ajax": {
+                    "url": "/Cliente/ListarGrupo",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "NombreGrupo", "name": "NombreGrupo" },
+                    { "data": "TipoDocumento", "name": "TipoDocumento" },
+                    { "data": "NroDocumento", "name": "NroDocumento" },
+                    { "data": "Estado", "name": "Estado" }],
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+
+
+
+
+            $("#btnBuscarGrupo").click(function () {
+                $("#modal-grupo").modal('show');
+                tablaGrupo.ajax.reload();
+            });
+
+
+
+            $('#BtnSalirModalGrupo').click(function () {
+
+                $("#modal-grupo").modal('hide');
+            });
+
+
+            $("#tblGrupo tbody").on('dblclick', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    tablaGrupo.$('tr.selected').removeClass('selected');
+                }
+                else {
+                    tablaGrupo.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                    var dato = tablaGrupo.row(this).data();
+                    $("#txtNombreGrupo").val(dato.NombreGrupo);
+                    $("#txtIdGrupo").val(dato.IdGrupo);
+                    $("#modal-grupo").modal('hide');
+                }
+            });
+
+            //fin  eventos de  la tabla grupo
+
+
+
+
+
+
+
+
+
+
+
+            $("#BtnRegistrarCliente").click(function () {
+
+                if ($("#txtNombreComercial").val() == '') {
+
+                    alertify.error('Registre el Nombre Comercial');
+
+                } else if ($("#txtRazonSocial").val() == '') {
+                    alertify.error('Registre el Razon Social!');
+
+                } else if ($("#txtTipoCliente").val() == '') {
+
+                    alertify.error('Seleccione el Tipo de Cliente!');
+                }
+
+                else if ($("#txtIdTipoCliente").val() == '') {
+
+                    alertify.error('Seleccione el Tipo de Cliente!');
+                }
+                else if ($("#txtRuc").val() == '') {
+                    alertify.error('El Nro de documento es obligatorio!');
+
+                } else if ($("#cbDepartamento").val() == '') {
+
+                    alertify.error('Ingrese Departamento!');
+
+                } else if ($("#txtProvincia").val() == '') {
+
+                    alertify.error('Ingresa Provincia !');
+
+                }
+                else if ($("#txtDistrito").val() == '') {
+
+                    alertify.error('Ingrese la Distrito!');
+
+                }
+
+                else if ($("#txtDireccion").val() == '') {
+
+                    alertify.error('Ingresa a la direccion !');
+
+                }
+
+                else if ($("#txtNombreEmpleado").val() == '') {
+
+                    alertify.error('Seleccione Empleado !');
+
+                }
+                else if ($("#txtIdEmpleado").val() == '') {
+
+                    alertify.error('Seleccione Empleado!');
+                }
+
+                else if ($("#txtNombreGrupo").val() == '') {
+
+                    alertify.error('Seleccione Grupo al que pertenece!');
+                }
+
+                else if ($("#txtIdGrupo").val() == '') {
+
+                    alertify.error('Seleccione Grupo al que pertenece!');
+                }
+
+
+                else if ($("#txtFechaSunat").val() == '') {
+
+                    alertify.error('Registre Fecha Facturacion Sunat');
+
+                } else if ($("#txtNombreContacto1,#txtNroContacto1,#txtEmailContacto1").val() == '' && $("#txtNombreContacto2,#txtNroContacto2,#txtEmailContacto2").val() == '' && $("#txtNombreContacto3,#txtNroContacto3,#txtEmailContacto3").val() == '') {
+
+                    alertify.error('Registre el detalle del contacto (Nombre/Cargo,Telefono,Correo)');
+
+                }else {
+
+                    var estado = "A";
+                    var data = {
+
+
+
+                        NombreComercial: $("#txtNombreComercial").val().toUpperCase(),
+                        RazonSocial: $("#txtRazonSocial").val().toUpperCase(),
+                        Ruc: $("#txtRuc").val(),
+                        departamento: $("#cbDepartamento").val().toUpperCase(),
+                        Provincia: $("#txtProvincia").val().toUpperCase(),
+                        Distrito: $("#txtDistrito").val().toUpperCase(),
+                        Direccion: $("#txtDireccion").val().toUpperCase(),
+                        IdTipoCliente: $("#txtIdTipoCliente").val(),
+                        NombreContacto1: $("#txtNombreContacto1").val(),
+                        NombreContacto3: $("#txtNombreContacto3").val(),
+                        NroContacto1: $("#txtNroContacto1").val(),
+                        NroContacto3: $("#txtNroContacto3").val(),
+                        EmailContacto1: $("#txtEmailContacto1").val(),
+                        EmailContacto3: $("#txtEmailContacto3").val(),
+                        NombreContacto2: $("#txtNombreContacto2").val(),
+                        NroContacto2: $("#txtNroContacto2").val(),
+                        EmailContacto2: $("#txtEmailContacto2").val(),
+                        IdEmpleado: $("#txtIdEmpleado").val(),
+                        FechaSunat: $("#txtFechaSunat").val(),
+                        NombreGrupo: $("#txtNombreGrupo").val(),
+                        IdGrupo: $("#txtIdGrupo").val(),
+                        Estado: estado
+                    }
+
+                    $.ajax({
+                        url: '/Cliente/RegistroCliente/',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: JSON.stringify(data),
+                        contentType: "application/json",
+                        success: function (result) {
+
+                            if (result = 'OK') {
+
+                                alertify.success('Registro exitoso!!' + result);
+                                LimpiarCajaDeTexto();
+                                tablaClientes.ajax.reload();
+
+                            } else {
+
+                                alertify.error('Error, intente nuevamente!' + result);
+
+                            }
+                        },
+                        error: function (result) {
+                            alertify.error('Error, intente nuevamente!!');
+                        }
+
+                    });
+                }
+
+
+            });
+
+
+
+
+
+
+
+            $("#btnCancelarRegistro").click(function () {
+                LimpiarCajaDeTexto();
+                $("#BtnEditarCliente").hide();
+                $("#BtnRegistrarCliente").show();
+            });
+
+
+            $("#BtnEditarCliente").click(function () {
+
+                if ($("#txtNombreComercial").val() == '') {
+
+                    alertify.error('Registre el Nombre Comercial');
+
+                } else if ($("#txtRazonSocial").val() == '') {
+                    alertify.error('Registre el Razon Social!');
+
+                } else if ($("#txtTipoCliente").val() == '') {
+
+                    alertify.error('Seleccione el Tipo de Cliente!');
+                }
+
+                else if ($("#txtIdTipoCliente").val() == '') {
+
+                    alertify.error('Seleccione el Tipo de Cliente!');
+                }
+                else if ($("#txtRuc").val() == '') {
+                    alertify.error('El Nro de documento es obligatorio!');
+
+                } else if ($("#cbDepartamento").val() == '') {
+
+                    alertify.error('Ingrese Departamento!');
+
+                } else if ($("#txtProvincia").val() == '') {
+
+                    alertify.error('Ingresa Provincia !');
+
+                }
+                else if ($("#txtDistrito").val() == '') {
+
+                    alertify.error('Ingrese la Distrito!');
+
+                }
+
+                else if ($("#txtDireccion").val() == '') {
+
+                    alertify.error('Ingresa a la direccion !');
+
+                }
+
+                else if ($("#txtNombreEmpleado").val() == '') {
+
+                    alertify.error('Seleccione Empleado !');
+
+                }
+                else if ($("#txtIdEmpleado").val() == '') {
+
+                    alertify.error('Seleccione Empleado!');
+
+                }
+
+                else if ($("#txtNombreGrupo").val() == '') {
+
+                    alertify.error('Seleccione Grupo al que pertenece!');
+                }
+
+                else if ($("#txtIdGrupo").val() == '') {
+
+                    alertify.error('Seleccione Grupo al que pertenece!');
+                }
+
+                else if ($("#txtFechaSunat").val() == '') {
+
+                    alertify.error('Registre Fecha Facturacion Sunat');
+
+                } else if ($("#txtNombreContacto1,#txtNroContacto1,#txtEmailContacto1").val() == '' && $("#txtNombreContacto2,#txtNroContacto2,#txtEmailContacto2").val() == '' && $("#txtNombreContacto3,#txtNroContacto3,#txtEmailContacto3").val() == '') {
+
+                    alertify.error('Registre el detalle del contacto (Nombre/Cargo,Telefono,Correo)');
+
+                }else {
+
+                    var estado = "A";
+                    var data = {
+
+                        Idcliente: $("#txtIdCliente").val(),
+                        NombreComercial: $("#txtNombreComercial").val().toUpperCase(),
+                        RazonSocial: $("#txtRazonSocial").val().toUpperCase(),
+                        Ruc: $("#txtRuc").val(),
+                        departamento: $("#cbDepartamento").val().toUpperCase(),
+                        Provincia: $("#txtProvincia").val().toUpperCase(),
+                        Distrito: $("#txtDistrito").val().toUpperCase(),
+                        Direccion: $("#txtDireccion").val().toUpperCase(),
+                        IdTipoCliente: $("#txtIdTipoCliente").val(),
+                        NombreContacto1: $("#txtNombreContacto1").val(),
+                        NombreContacto3: $("#txtNombreContacto3").val(),
+                        NroContacto1: $("#txtNroContacto1").val(),
+                        NroContacto3: $("#txtNroContacto3").val(),
+                        EmailContacto1: $("#txtEmailContacto1").val(),
+                        EmailContacto3: $("#txtEmailContacto3").val(),
+                        NombreContacto2: $("#txtNombreContacto2").val(),
+                        NroContacto2: $("#txtNroContacto2").val(),
+                        EmailContacto2: $("#txtEmailContacto2").val(),
+                        IdEmpleado: $("#txtIdEmpleado").val(),
+                        FechaSunat: $("#txtFechaSunat").val(),
+                        NombreGrupo: $("#txtNombreGrupo").val(),
+                        IdGrupo: $("#txtIdGrupo").val(),
+                        Estado: estado
+                    }
+
+                    $.ajax({
+                        url: '/Cliente/ActualizaPuntoVenta/',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: JSON.stringify(data),
+                        contentType: "application/json",
+                        success: function (result) {
+
+                            if (result = 'OK') {
+
+                                alertify.success('Registro exitoso!!' + result);
+                                LimpiarCajaDeTexto();
+                                tablaClientes.ajax.reload();
+
+                            } else {
+
+                                alertify.error('Error, intente nuevamente!' + result);
+
+                            }
+                        },
+                        error: function (result) {
+                            alertify.error('Error, intente nuevamente!!');
+                        }
+
+                    });
+                }
+
+
+            });
+
+
+
+
+            $("#btnSalir").click(function () {
+                $("#modal-Empleado").modal('hide');
+            });
+
+
+            function LimpiarCajaDeTexto() {
+                $("#txtNombreComercial,#txtRazonSocial,#txtRuc,#txtProvincia,#txtDistrito,#txtDireccion,#txtIdTipoCliente,#txtNombreContacto3,#txtNombreContacto1,#txtNroContacto3,#txtNroContacto1,#txtEmailContacto3,#txtEmailContacto1,#txtNombreContacto2,#txtNroContacto2,#txtEmailContacto2,#txtIdEmpleado,#txtNombreEmpleado,#txtTipoCliente,#txtNombreGrupo,#txtIdGrupo").val('');
+                $("#txtNombreComercial").focus;
+                $("BtnEditarCliente").hide();
+
+            }
+
+
+
+        });
+
+
+
+
+
+
+
+        function BuscarClientePorId(Id) {
+            if (Id != null) {
+                $.ajax({
+                    url: '/Cliente/ObtenerClientePorId/' + Id,
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data) {
+
+                        if (data != null) {
+                            $("#txtIdCliente").val(data.Idcliente);
+                            $("#txtRazonSocial").val(data.RazonSocial);
+                            $("#txtNombreComercial").val(data.NombreComercial);
+                            $("#txtRuc").val(data.Ruc);
+                            $("#cbDepartamento").val(data.departamento);
+                            $("#txtProvincia").val(data.Provincia);
+                            $("#txtDistrito").val(data.Distrito);
+                            $("#txtDireccion").val(data.Direccion);
+                            $("#txtIdTipoCliente").val(data.IdTipoCliente);
+                            $("#txtTipoCliente").val(data.NombreTipo);
+                            $("#txtNombreContacto1").val(data.NombreContacto1);
+                            $("#txtNombreContacto3").val(data.NombreContacto3);
+                            $("#txtNroContacto1").val(data.NroContacto1);
+                            $("#txtNroContacto3").val(data.NroContacto3);
+                            $("#txtEmailContacto1").val(data.EmailContacto1),
+                            $("#txtEmailContacto3").val(data.EmailContacto3),
+                            $("#txtNombreContacto2").val(data.NombreContacto2);
+                            $("#txtNroContacto2").val(data.NroContacto2);
+                            $("#txtEmailContacto2").val(data.EmailContacto2);
+                            $("#txtIdEmpleado").val(data.IdEmpleado);
+                            $("#txtNombreEmpleado").val(data.NombreEmpleado);
+                            $("#txtNombreGrupo").val(data.NombreGrupo);
+                            $("#txtIdGrupo").val(data.IdGrupo);
+                            var fecha = ConvertirFecha(data.FechaSunat)
+
+                            $("#txtFechaSunat").val(fecha),
+
+                                $("#BtnEditarCliente").show();
+                            $("#BtnRegistrarCliente").hide();
+
+                        } else {
+
+                            alertify.error('Error Al consultar Datos!');
+
+                        }
+                    },
+                    error: function (err) {
+                        alertify.error('Error Al consultar Datos!');
+                    }
+                });
+
+
+            } else {
+
+                alertify.error('Error, no hay codigo!');
+            }
+        }
+
+
+
+
+        function ConvertirFecha(data) {
+            if (data === null) return "";
+            var pattern = /Date\(([^)]+)\)/;
+            var results = pattern.exec(data);
+            var dt = new Date(parseFloat(results[1]));
+            return dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate();
+        }
+
+
+
+        function EliminaCliente(Id) {
+            if (Id != null) {
+                alertify.confirm("Eliminacion", "Realmente desea Eliminar el registro?",
+                    function () {
+                        $.ajax({
+                            url: '/Cliente/EliminarCliente/' + Id,
+                            type: 'POST',
+                            dataType: 'json',
+                            success: function (data) {
+                                if (data == 'OK') {
+                                    alertify.success('El Registro fué eliminado con Éxito !');
+                                    tablaClientes.ajax.reload();
+                                } else {
+                                    alertify.error('No se pudo completar la acción! Intentelo nuevamete');
+
+                                }
+                            },
+                            error: function (err) {
+                                alertify.error('No se pudo completar la acción! Intentelo nuevamete');
+                            }
+                        });
+                    },
+
+                    function () {
+                        alertify.error('La acción Fué Cancelada !');
+                    });
+
+            } else {
+                alertify.error('No ha seleccionado nigun Item!');
+            }
+        }
+
+
+
+
+
+
+
+        $('#txtFechaSunat').datepicker({
+            pickTime: true,
+            autoclose: true,
+            format: 'yyyy/mm/dd',
+            language: 'es',
+            startDate: '-1d',
+            title: 'FECHA SUNAT'
+        });
+
+
+    </script>
+
+
+}
+
+
+

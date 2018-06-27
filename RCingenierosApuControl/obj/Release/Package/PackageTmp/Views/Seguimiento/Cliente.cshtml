@@ -1,0 +1,346 @@
+﻿
+@{
+    ViewBag.Title = "Cliente";
+}
+
+<h2>Cliente</h2>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2> Seguimiento a mis clientes</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li>
+                    <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li>
+                    <a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+            <div class="row">
+
+                <div class="form-group">
+                    <label>Cliente</label>
+                    <div class="input-group">
+                        <input type="text" id="txtNombrecliente" class="form-control" disabled />
+                        <div class="input-group-addon btn-danger" id="btnBuscarCliente">
+                            <i class="fa fa-search"> Buscar.. </i>
+                        </div>
+                        <input   type="text" id="txtIdCliente" class="form-control" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                    <div class="table-responsive-sm">
+                        <table id="tblDetalleSeguimiento" class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tipo Movimiento</th>
+                                    <th>Descripcion</th>
+                                    <th>Logros</th>
+                                    <th>Fecha</th>
+                                    <th>Finalizar Seguimiento</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+            
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="modal-Cliente">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Mis Clientes</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+          
+                        <div class="table-responsive">
+                            <table id="tblClientes" class="table table-hover">
+                                <thead>
+                                    <tr>
+
+                                        <th>Cliente</th>
+                                        <th>RUC</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                  
+                </div>
+
+                <div class="row animate">
+                    <button class="btn btn-danger" id="BtnSalirModalCliente">Salir </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Content/vendors/Datatables/Js/jquery-1.12.4.js"></script>
+@*<script src="~/Content/vendors/jquery/dist2/jquery.min.js"></script>*@
+
+
+<link href="~/Content/vendors/Datatables/Css/select.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/vendors/Datatables/Css/dataTables.bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/vendors/Datatables/Css/buttons.dataTables.min.css" rel="stylesheet" />*@
+@section scripts{
+
+    <script src="~/Content/vendors/Datatables/Js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/vendors/Datatables/Js/dataTables.select.min.js"></script>
+
+    <script type="text/javascript">
+
+
+
+
+        $(document).ready(function () {
+            $("#txtIdCliente").hide()
+            //$("#tblDetalleSeguimiento tbody").on('dblclick', 'tr', function () {
+            //    if ($(this).hasClass('selected')) {
+            //        $(this).removeClass('selected');
+            //        tablaDetalleSeguimiento.$('tr.selected').removeClass('selected');
+            //    }
+            //    else {
+            //        tablaDetalleSeguimiento.$('tr.selected').removeClass('selected');
+            //        $(this).addClass('selected');
+
+            //        var dato = tablaDetalleSeguimiento.row(this).data();
+
+            //        //$("#txtIdCliente").val(dato.Idcliente);
+            //        //$("#txtNombrecliente").val(dato.NombreComercial);
+            //        //$("#modal-Cliente").modal('hide');
+
+            //        tablaDetalleSeguimiento.ajax.reload();
+            //    }
+
+            //});
+
+
+
+            var tablaClientes = $("#tblClientes").DataTable({
+                "ajax": {
+                    "url": "/Seguimiento/ListarClienteSeguimientoActivo",
+                    "type": "GET",
+                    "datatype": "json",
+                    "data": function (d) {
+                        d.IdEmpleado = $("#txtCommonIdEmpleado").val()
+                    }
+                },
+                "columns": [
+
+                    { "data": "RazonSocial", "name": "RazonSocial" },
+                    { "data": "Ruc", "name": "Ruc" }
+                ],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+
+
+
+            $("#btnBuscarCliente").click(function () {
+                $("#modal-Cliente").modal('show');
+
+            });
+            $('#BtnSalirModalCliente').click(function () {
+                $("#modal-Cliente").modal('hide');
+            });
+
+
+
+
+
+            $("#tblClientes tbody").on('dblclick', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                    tablaClientes.$('tr.selected').removeClass('selected');
+                }
+                else {
+                    tablaClientes.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+
+                    var dato = tablaClientes.row(this).data();
+
+                    $("#txtIdCliente").val(dato.Idcliente);
+                    $("#txtNombrecliente").val(dato.RazonSocial);
+                    $("#modal-Cliente").modal('hide');
+
+
+                    if ($("#tblDetalleSeguimiento tbody tr").length > 0) {
+                        $('#tblDetalleSeguimiento').DataTable().ajax.reload();
+                        
+                    } else {
+                        cargardetalle();
+                    }
+                }
+
+            });
+
+
+            function cargardetalle (){
+            var tablaDetalleSeguimiento = $("#tblDetalleSeguimiento").DataTable({
+                "ajax": {
+                    "url": "/Seguimiento/ListarDetalleMovimientoEnSeguimiento",
+                    "type": "GET",
+                    "datatype": "json",
+                    "data": function (d) {
+                        d.Idcliente = $("#txtIdCliente").val()
+                    }
+                },
+                "columns": [
+
+                    { "data": "NombreMovimiento", "name": "NombreMovimiento" },
+                    { "data": "Descripcion", "name": "Descripcion" },
+                    { "data": "Logros", "name": "Logros" },
+                    {
+                        "data": "FechaMovimiento", "render": function (value) {
+                            if (value === null) return "";
+                            var pattern = /Date\(([^)]+)\)/;
+                            var results = pattern.exec(value);
+                            var dt = new Date(parseFloat(results[1]));
+                            return dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate();
+                        }
+                    },
+                    {
+                        "data": "IdDetalleMovimiento", "render": function (data) {
+
+                            return "<button class='btn btn-success btn-sm'style='margin-left:5px' onclick='CerrarSeguimiento("+data+")' ><i class='glyphicon glyphicon-log-out'></i>Finalizar Seguimiento</button>";
+                        }
+                    }
+                ],
+                "responsive": true,
+                "language": {
+                    "decimal": "",
+                    "emptyTable": "No se encotraron datos..",
+                    "info": "Mostrando _START_ al _END_ de _TOTAL_ Filas",
+                    "infoEmpty": "Mostrando 0 al 0 de 0 Filas",
+                    "infoFiltered": "(filtrando _MAX_ total Filas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "mostrado _MENU_ cantidad",
+                    "loadingRecords": "Cargando..",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "No hay  datos..",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Pasado",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                }
+            });
+        }
+
+
+
+
+        });
+
+
+
+
+
+        function CerrarSeguimiento(Id) {
+            if (Id != null) {
+                alertify.confirm("cierre de Seguimiento", "Realmente desea cerrar el Seguimiento la cliente?",
+                    function () {
+                        $.ajax({
+                            url: '/Seguimiento/CerrarSeguimientoCliente/'+Id,
+                            type: 'POST',
+                            dataType: 'json',
+                            success: function (data) {
+
+                                if (data == 'OK') {
+                                    $('#tblDetalleSeguimiento').DataTable().ajax.reload();
+                                    alertify.success('Seguiminto cerrado con Éxito !');
+
+                                } else {
+                                    alertify.error('No se pudo completar la acción! Intentelo nuevamete');
+                                }
+                            },
+                            error: function (err) {
+                                alertify.error('No se pudo completar la acción! Intentelo nuevamete');
+                            }
+                        });
+                    },
+
+                    function () {
+                        alertify.error('La acción Fué Cancelada !');
+                    });
+
+            } else {
+                alertify.error('No ha seleccionado nigun Item!');
+            }
+        }
+
+
+
+
+ 
+
+        //$('#txtFecha').datepicker({
+        //    pickTime: true,
+        //    autoclose: true,
+        //    format: 'yyyy/mm/dd',
+        //    language: 'es',
+        //    startDate: '-1d',
+        //    title: 'FECHA'
+        //});
+
+
+
+
+    </script>
+
+
+}
